@@ -118,7 +118,7 @@
 
         function openTab(url) {
             var iframe = document.createElement('iframe');
-            iframe.src = "https://noctura.tech/~/uv/" + btoa(url);
+            iframe.src = "https://noctura.tech/~/uv/" + encodeURIComponent(url);
             iframe.style.display = 'none';
             document.querySelector('.browser-window').appendChild(iframe);
 
